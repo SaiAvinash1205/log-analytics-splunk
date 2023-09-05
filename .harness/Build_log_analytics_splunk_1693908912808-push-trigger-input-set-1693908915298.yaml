@@ -1,0 +1,14 @@
+inputSet:
+  name: Build_log_analytics_splunk_1693908912808-push-trigger-input-set
+  identifier: Build_log_analytics_splunk_1693908912808pushtriggerinputset
+  orgIdentifier: default
+  projectIdentifier: Test
+  pipeline:
+    identifier: Build_log_analytics_splunk_1693908912808
+    properties:
+      ci:
+        codebase:
+          build:
+            type: branch
+            spec:
+              branch: <+trigger.branch>
